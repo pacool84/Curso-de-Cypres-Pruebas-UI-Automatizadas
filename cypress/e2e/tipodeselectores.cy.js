@@ -38,7 +38,14 @@ describe("Probando configuracion", () => {
 
   it.only("Identificando el PARENT", () => {
     cy.visit("https://cuevana3.it/");
-    cy.get("#keysssb").parent();
-    cy.get(".main-site").parents().find("label");
+    cy.get(
+      "#keysssb"
+    ).parent(); /* Se encuentra el padre del elemento seleccionado */
+    cy.get(".main-site")
+      .parents()
+      .find(
+        "label"
+      ); /* Se encuentran todos los padres del elemento seleccionado  */
+    /* Tener encuenta el comando FIND que ayuda de igual forma a encontrar algun elemento, jamas utilizarlo como cy.find, ya que tiene que ir concatenado primero con un cy.get */
   });
 });
