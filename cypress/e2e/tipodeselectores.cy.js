@@ -12,7 +12,7 @@ describe("Probando configuracion", () => {
     cy.get('input[placeholder="First Name"]');
   });
 
-  it("Obteniendo por un id", () => {
+  it("Obteniendo por un ID", () => {
     cy.get("#firstName"); /* El simbolo de # representa buscar por ID */
   });
 
@@ -22,7 +22,7 @@ describe("Probando configuracion", () => {
     ); /*  Considerar que un elemento puede tener varias clases, en ese caso tenemos que unirlas por medio de un . punto */
   });
 
-  it("Obteniendo por un tag", () => {
+  it("Obteniendo por un ID", () => {
     cy.get("#keysssb").type(
       "Top Gun and all the fucking movies that I want F U C K Y E A H B I T C H E S"
     );
