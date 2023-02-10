@@ -27,4 +27,11 @@ describe("Generando Aserciones", () => {
       expect(element).to.have.attr("placeholder", "Buscar películas...");
     });
   });
+
+  it("Mi tercer Asercion, utilizando assert", () => {
+    cy.visit("https://www4.cuevana3.ch/");
+    cy.get("#keysss").then((element) => {
+      assert.equal(element.attr("placeholder"), "Buscar películas...");
+    });
+  });
 });
